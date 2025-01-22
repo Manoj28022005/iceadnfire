@@ -1,0 +1,13 @@
+.carousel-inner {
+    background-color: white; 
+  }
+  
+  .carousel-item img {
+    height: 500px;
+    object-fit: cover;
+  }
+  
+  body.light-mode .carousel-inner {
+    background-color: black;
+  }
+  

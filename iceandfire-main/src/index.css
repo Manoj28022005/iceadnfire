@@ -1,0 +1,154 @@
+/* Reset margin and apply font globally */
+body, html {
+  margin: 0;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 700; 
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Default styles (dark mode) */
+body {
+  background-color: black; /* Dark mode background */
+  color: white; /* Light text for dark mode */
+}
+
+/* Light mode styles */
+body.light-mode {
+  background-color: white; /* Light mode background */
+  color: black; /* Dark text for light mode */
+}
+
+/* Dark mode styles */
+body.dark-mode {
+  background-color: black; /* Dark mode background */
+  color: white; /* Light text for dark mode */
+}
+
+/* Global Link Styles */
+a {
+  color: inherit; /* Inherit text color for links */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline; /* Hover underline effect for links */
+}
+
+/* Footer styling */
+footer {
+  background-color: #38a169; /* Same as bg-green-500 */
+  color: black; /* Footer text color in light mode */
+}
+
+body.dark-mode footer {
+  color: white; /* Footer text color in dark mode */
+}
+
+/* Carousel-specific styles */
+#carousel {
+  max-height: 400px;
+}
+
+.carousel-item img {
+  object-fit: cover;
+  height: 500px;
+  background-color: white; /* White background for carousel in dark mode */
+}
+
+body.dark-mode .carousel-item img {
+  background-color: black; /* Black background for carousel in dark mode */
+}
+
+/* Logo image styling */
+.logo-image {
+  width: 80px;
+  height: 80px;
+}
+
+/* Form search button and input */
+form input {
+  background-color: white;
+  color: black;
+}
+
+body.dark-mode form input {
+  background-color: black;
+  color: white;
+}
+
+/* Button styling */
+form button {
+  background-color: #38a169; /* Green background */
+  color: white;
+}
+
+body.dark-mode form button {
+  background-color: #38a169; /* Maintain green background for button in dark mode */
+  color: white; /* Ensure text remains visible */
+}
+
+/* Button hover effect */
+form button:hover {
+  opacity: 0.9;
+}
+
+/* Dropdown styling */
+.dropdown-menu {
+  background-color: white; /* Default dropdown background */
+  color: black; /* Default dropdown text color */
+}
+
+body.dark-mode .dropdown-menu {
+  background-color: #333; /* Dark mode dropdown background */
+  color: white; /* Dark mode dropdown text color */
+}
+
+body.dark-mode .dropdown-item {
+  color: white; /* Dropdown item color in dark mode */
+}
+
+body.dark-mode .dropdown-item:hover {
+  background-color: #444; /* Dropdown item hover effect in dark mode */
+}
+
+/* Other global styles */
+.bold-600 {
+  font-weight: 600;
+}
+
+.bold-700 {
+  font-weight: 700;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.nav-link.active {
+  text-decoration: underline; /* Underline active link */
+  font-weight: bold; /* Optional: make it bold */
+}
+
+/* Alternatively, you can use a different color for the active link */
+.nav-link.active {
+  color: #ffc107; /* Change color when active */
+}
+
+.custom-card {
+  flex: 0 0 48%; /* Takes about half the row on medium and larger screens */
+  max-width: 48%;
+  margin: 10px;
+}
+
+@media (max-width: 768px) {
+  .custom-card {
+    flex: 0 0 100%; /* Full width on smaller screens */
+    max-width: 100%;
+  }
+}
+
+.dropdown-item:hover {
+  font-weight: bold !important;
+  text-decoration: none !important;
+}
