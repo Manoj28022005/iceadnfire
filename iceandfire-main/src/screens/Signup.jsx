@@ -63,7 +63,7 @@ function Signup({ darkMode, showSignupModal, setShowSignupModal, openLoginModal 
     }
 
     try {
-      const response = await fetch(`${process.env.REACT_APP_WEB_URL}api/sendOtp`, {
+      const response = await fetch(`${process.env.REACT_APP_WEB_URL}/api/sendOtp`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
